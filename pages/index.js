@@ -1,9 +1,12 @@
 import Head from 'next/head'
 import Image from 'next/image'
-import { Inter } from '@next/font/google'
 import styles from '@/styles/Home.module.css'
+import Squirtle from '@/components/lottie'
+import Navbar from '@/components/navbar'
+import React from "react";
+import Lottie from "lottie-react";
+import waterAnimation from "../public/water.json";
 
-const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
   return (
@@ -14,110 +17,30 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className={styles.main}>
-        <div className={styles.description}>
-          <p>
-            Get started by editing&nbsp;
-            <code className={styles.code}>pages/index.js</code>
-          </p>
-          <div>
-            <a
-              href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              By{' '}
-              <Image
-                src="/vercel.svg"
-                alt="Vercel Logo"
-                className={styles.vercelLogo}
-                width={100}
-                height={24}
-                priority
-              />
-            </a>
-          </div>
+      <main className='mainCont'>
+      <Navbar />
+        <div className='pokeCont'> <Squirtle /></div>
+        <div className='textCont'>
+        <h1>Ivan Tong</h1>
+        <h2>Product Designer</h2>
+        <h2>Digital Designer</h2>
+        <h2>UI/UX Designer</h2>
+        <h2>Graphic Designer</h2>
         </div>
-
-        <div className={styles.center}>
-          <Image
-            className={styles.logo}
-            src="/next.svg"
-            alt="Next.js Logo"
-            width={180}
-            height={37}
-            priority
-          />
-          <div className={styles.thirteen}>
-            <Image
-              src="/thirteen.svg"
-              alt="13"
-              width={40}
-              height={31}
-              priority
-            />
-          </div>
-        </div>
-
-        <div className={styles.grid}>
-          <a
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <h2 className={inter.className}>
-              Docs <span>-&gt;</span>
-            </h2>
-            <p className={inter.className}>
-              Find in-depth information about Next.js features and&nbsp;API.
-            </p>
-          </a>
-
-          <a
-            href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <h2 className={inter.className}>
-              Learn <span>-&gt;</span>
-            </h2>
-            <p className={inter.className}>
-              Learn about Next.js in an interactive course with&nbsp;quizzes!
-            </p>
-          </a>
-
-          <a
-            href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <h2 className={inter.className}>
-              Templates <span>-&gt;</span>
-            </h2>
-            <p className={inter.className}>
-              Discover and deploy boilerplate example Next.js&nbsp;projects.
-            </p>
-          </a>
-
-          <a
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <h2 className={inter.className}>
-              Deploy <span>-&gt;</span>
-            </h2>
-            <p className={inter.className}>
-              Instantly deploy your Next.js site to a shareable URL
-              with&nbsp;Vercel.
-            </p>
-          </a>
-        </div>
+        <div className='water'><Lottie animationData={waterAnimation} loop={true} />;</div>
       </main>
+      <div>
+        <h3><strong>Techies of Tomorrow:</strong> Interviewed & waiting to hear back on 03/01.</h3>
+        <h3><strong>Knock Now UX Design co-op:</strong> Interview on 02/28/23 @ 9:45am.</h3>
+        <h3><strong>EA Experience Design Intern:</strong> waiting to hear back if I got an interview.</h3>
+        <h3><strong>Vancouver Costal Health:</strong> Rejected. Told me they were going to get back to me the week after applying but got back to me 2 weeks later with a rejection.</h3>
+        <h3><strong>Canucks:</strong> Pending response as I was offered an interview last year but I turned them down.</h3>
+        <h3><strong>Flowmarq:</strong> No Reply.</h3>
+        <h3><strong>Lampadarium:</strong> No Reply.</h3>
+        <h3><strong>Grow with Search:</strong> No Reply.</h3>
+        <h3><strong>ECS Automation:</strong> No Reply.</h3>
+        <h3><strong>Essential Design:</strong> No Reply.</h3>
+      </div>
     </>
   )
 }
