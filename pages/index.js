@@ -29,18 +29,6 @@ export default function Home() {
         </div>
         <div className='water'><Lottie animationData={waterAnimation} loop={true} />;</div>
       </main>
-      <div>
-        <h3><strong>Techies of Tomorrow:</strong> Interviewed & waiting to hear back on 03/01.</h3>
-        <h3><strong>Knock Now UX Design co-op:</strong> Interview on 02/28/23 @ 9:45am.</h3>
-        <h3><strong>EA Experience Design Intern:</strong> waiting to hear back if I got an interview.</h3>
-        <h3><strong>Vancouver Costal Health:</strong> Rejected. Told me they were going to get back to me the week after applying but got back to me 2 weeks later with a rejection.</h3>
-        <h3><strong>Canucks:</strong> Pending response as I was offered an interview last year but I turned them down.</h3>
-        <h3><strong>Flowmarq:</strong> No Reply.</h3>
-        <h3><strong>Lampadarium:</strong> No Reply.</h3>
-        <h3><strong>Grow with Search:</strong> No Reply.</h3>
-        <h3><strong>ECS Automation:</strong> No Reply.</h3>
-        <h3><strong>Essential Design:</strong> No Reply.</h3>
-      </div>
     </>
   )
 }
