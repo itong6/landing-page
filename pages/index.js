@@ -33,6 +33,7 @@ export default function Home() {
       </main>
       <div>
       <h3><strong>As a creative designer located in Vancouver, B.C, I bring expertise in developing UI/UX design for cross-platform applications. My passion lies in creating a user-centric experience that is both meaningful and enjoyable. With a strong focus on design, I strive to create visually appealing graphics for digital and print media.</strong></h3>
+      </div>
     </>
   )
 }
