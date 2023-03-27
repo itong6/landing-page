@@ -27,6 +27,19 @@ a {
   }
 }
 
+.spin {
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
 .mainCont {
   display: flex;
   width: 100vw;
@@ -110,6 +123,18 @@ h3 {
   } 
   
 }
+
+.squirtle {
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  transition: transform 0.5s ease-in-out;
+}
+
+.squirtle:hover {
+  cursor: pointer;
+}
+
 
 .water {
   position: absolute;
